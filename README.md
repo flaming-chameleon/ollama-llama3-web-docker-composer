@@ -74,6 +74,16 @@ This command will remove the containers and their associated volumes.
 
 ## Troubleshooting
 
+If you have problems with docker drivers run this on Ubuntu
+
+```bash
+sudo apt-get update && sudo apt-get install -y nvidia-docker2
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)\ncurl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -\ncurl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+sudo apt-get update && sudo apt-get install -y nvidia-docker2
+sudo systemctl restart docker
+```
+
+
 If you encounter any issues related to GPU access, ensure that the NVIDIA Docker Toolkit is properly installed and configured. Also, check the Docker and NVIDIA driver compatibility.
 
 ## Support
