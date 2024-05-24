@@ -1,3 +1,7 @@
+[![Watch the video](https://img.youtube.com/vi/pbOZE2KkNuw/maxresdefault.jpg)](https://youtu.be/pbOZE2KkNuw)
+[Here is my Youtube video](https://youtu.be/pbOZE2KkNuw): https://youtu.be/pbOZE2KkNuw
+
+
 # Ollama Docker Compose Setup
 
 This repository contains the Docker Compose configuration for running Ollama with the Llama3 model and its web interface. This setup simplifies the deployment of a powerful language model on your local machine with GPU acceleration.
